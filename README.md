@@ -10,8 +10,8 @@ This is simple note application using:
 - Publish to  IIS or windows hosting.
 
 *Demo:
-- mynotes.somee.com
-- admin page: mynotes.somee.com/admin (demo | demo)
+- http://mynotes.somee.com/
+- admin page: http://mynotes.somee.com//admin (demo | demo)
 
 *Screenshot
 <img src="https://i.imgur.com/xE8rRQz.png"/>
