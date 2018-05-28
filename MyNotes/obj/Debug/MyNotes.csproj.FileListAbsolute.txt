@@ -1,0 +1,87 @@
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\ApplicationInsights.config
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\MyNotes.dll.config
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\MyNotes.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\MyNotes.pdb
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\csc.exe
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\csc.exe.config
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\csc.rsp
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\csi.exe
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\csi.rsp
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\System.AppContext.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\System.Collections.Immutable.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\System.IO.FileSystem.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\System.Reflection.Metadata.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\vbc.exe
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\vbc.exe.config
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\vbc.rsp
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\VBCSCompiler.exe
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\roslyn\VBCSCompiler.exe.config
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\Antlr3.Runtime.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\Microsoft.AI.Agent.Intercept.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\Microsoft.AI.DependencyCollector.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\Microsoft.AI.Web.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\Microsoft.AI.WindowsServer.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\Microsoft.ApplicationInsights.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\Microsoft.Web.Infrastructure.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\Newtonsoft.Json.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\System.Web.Helpers.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\System.Web.Mvc.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\System.Web.Optimization.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\System.Web.Razor.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\System.Web.WebPages.Deployment.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\System.Web.WebPages.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\System.Web.WebPages.Razor.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\WebGrease.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\System.Web.Helpers.xml
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\System.Web.Mvc.xml
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\System.Web.Optimization.xml
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\System.Web.Razor.xml
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\System.Web.WebPages.xml
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\System.Web.WebPages.Deployment.xml
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\System.Web.WebPages.Razor.xml
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\Antlr3.Runtime.pdb
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\Newtonsoft.Json.xml
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\Microsoft.ApplicationInsights.xml
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\Microsoft.AI.DependencyCollector.xml
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\Microsoft.AI.WindowsServer.xml
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\Microsoft.AI.Web.xml
+E:\OneDrive\03. My Project\MyNotes\MyNotes\obj\Debug\MyNotes.csprojResolveAssemblyReference.cache
+E:\OneDrive\03. My Project\MyNotes\MyNotes\obj\Debug\MyNotes.csproj.CoreCompileInputs.cache
+E:\OneDrive\03. My Project\MyNotes\MyNotes\obj\Debug\MyNotes.csproj.CopyComplete
+E:\OneDrive\03. My Project\MyNotes\MyNotes\obj\Debug\MyNotes.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\obj\Debug\MyNotes.pdb
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\EntityFramework.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\EntityFramework.SqlServer.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\EntityFramework.xml
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\EntityFramework.SqlServer.xml
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\PagedList.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\PagedList.Mvc.dll
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\PagedList.xml
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\PagedList.Mvc.xml
+E:\OneDrive\03. My Project\MyNotes\MyNotes\obj\Debug\MyNotes.Migrations.Initial.resources
+E:\OneDrive\03. My Project\MyNotes\MyNotes\obj\Debug\MyNotes.csproj.GenerateResource.cache
+E:\OneDrive\03. My Project\MyNotes\MyNotes\bin\OmegaLib.dll
+C:\Users\sngdinh1\source\repos\MyNotes\MyNotes\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\sngdinh1\source\repos\MyNotes\MyNotes\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\sngdinh1\source\repos\MyNotes\MyNotes\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\sngdinh1\source\repos\MyNotes\MyNotes\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\sngdinh1\source\repos\MyNotes\MyNotes\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\sngdinh1\source\repos\MyNotes\MyNotes\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\sngdinh1\source\repos\MyNotes\MyNotes\bin\roslyn\VBCSCompiler.exe

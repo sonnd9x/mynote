@@ -1,0 +1,46 @@
+﻿@model MyNotes.Entity.tbl_Notes
+@{
+    ViewBag.Title = "Simple Note for everyone";
+}
+@if (ViewBag.Model != null)
+{
+    var item = ViewBag.Model as MyNotes.Entity.tbl_Notes;
+    ViewBag.Title = item.Name;
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h5><a href="~/@item.ID">@item.Name</a></h5></div>
+            <div class="panel-body bodycontent">
+                <pre>@item.Content</pre>
+            </div>
+            <div class="panel-footer"><a href="~/dl/@item.ID" class="btn btn-default">Download</a> <a href="~/raw/@item.ID" class="btn btn-default">Raw</a></div>
+        </div>
+    </div>
+}
+else
+{
+    using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "myTable" }))
+    {
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="form-group">
+                    @Html.TextAreaFor(model => model.Content, new { @class = "form-control mycontent", @id = "myContent", rows = "20", @placeholder = "Content" })
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Name)
+                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control", @placeholder = "Name", @required = "required" })
+                </div>
+                <div class="form-group">
+                    @Html.DropDownListFor(model => model.Public, new[] { new SelectListItem { Text = "Public", Value = "true", Selected = true }, new SelectListItem { Text = "Private", Value = "false", Selected = false } }, new { @class = "form-control short" })
+                </div>
+                <div class="form-group">
+                    <img src="~/CaptchaImg" title="Captcha" style="margin-bottom: 8px;" />
+                    <input type="text" name="clientCaptcha" required class="form-control short", placeholder = "Captcha" />
+                    <small style="font-weight:bold;color:red;">@ViewBag.CaptchaError</small>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    }
+}

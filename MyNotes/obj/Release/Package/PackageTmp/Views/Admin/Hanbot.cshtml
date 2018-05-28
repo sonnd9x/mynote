@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Hanbot";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Hanbot</h2>
+<hr />
+@using (Html.BeginForm("Hanbot", "Admin", FormMethod.Get))
+{
+    <div class="panel panel-primary">
+        <div class="panel-body">
+            <div class="form-group">
+                @Html.Label("Hanbot Key")
+                @Html.TextBox("key", string.Empty, new { @class = "form-control", @placeholder = "ID", @value = ViewBag.ID })
+            </div>
+            @if (ViewBag.Key != null)
+            {
+                <div class="form-group">
+                    @Html.Label("Hanbot Account")
+                    @Html.TextArea("hanbotkey", ViewBag.Key as string, new { @class = "form-control", @value = ViewBag.Key, @readonly = "readonly" })
+                </div>
+            }
+        </div>
+        <div class="panel-footer">
+            <button class="btn btn-success">Submit</button>
+        </div>
+    </div>
+}
