@@ -1,2 +1,19 @@
 # mynote
-Simple note application ASP.Net MVC 5
+This is simple note application using:
+- Asp.Net MVC5
+- Entity Framework 6
+- Bootstrap 3
+- Pagedlist
+
+*How to install.
+- Clone project and change String connection in Webconfig.
+- Publish to  IIS or windows hosting.
+
+*Demo:
+- mynotes.somee.com
+- admin page: mynotes.somee.com/admin (demo | demo)
+
+*Screenshot
+<img src="https://i.imgur.com/xE8rRQz.png"/>
+<img src="https://i.imgur.com/8DZ2uph.png"/>
+<img src="https://i.imgur.com/wYvHfyh.png"/>
