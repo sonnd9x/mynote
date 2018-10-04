@@ -18,9 +18,3 @@ This is simple note application using:
 <img src="https://i.imgur.com/8DZ2uph.png"/>
 <img src="https://i.imgur.com/wYvHfyh.png"/>
 // You can find demo at here
-*Demo:
-
-*Screenshot
-<img src="https://i.imgur.com/xE8rRQz.png"/>
-<img src="https://i.imgur.com/8DZ2uph.png"/>
-<img src="https://i.imgur.com/wYvHfyh.png"/>
