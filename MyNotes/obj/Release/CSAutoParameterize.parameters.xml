@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="NoteDbContext-Web.config Connection String" description="NoteDbContext Connection String used in web.config by the application to access the database." defaultValue="data source=quanlydbserver.database.windows.net;initial catalog=wpdemo;persist security info=True;user id=quanlydbserver;password=Abc@12345;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\SonND\\Downloads\\MyNotes\\MyNotes\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='NoteDbContext']/@connectionString" />
-  </parameter>
-</parameters>
