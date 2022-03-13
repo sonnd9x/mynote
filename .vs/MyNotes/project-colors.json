@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b27c0692-7b29-423a-a843-38279a334d1d": {
+      "ProjectGuid": "b27c0692-7b29-423a-a843-38279a334d1d",
+      "DisplayName": "MyNotes",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

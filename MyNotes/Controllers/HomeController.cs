@@ -53,7 +53,7 @@ namespace MyNotes.Controllers
             return View();
         }
 
-        public ActionResult Recent(string s, int page=1, int pageSize = 10)
+        public ActionResult Recent(string s, int page = 1, int pageSize = 10)
         {
             ViewBag.Search = s;
             var model = dao.ListAllPaging(s, page, pageSize);
@@ -62,10 +62,11 @@ namespace MyNotes.Controllers
 
         public ActionResult Raw(Guid? id)
         {
-            if(id != null)
+            if (id != null)
             {
                 var model = dao.GetNote(id.Value);
-                return View(model);
+                Response.ContentType = "text/plain";
+                return Content(model.Content);
             }
             return RedirectToAction("Index");
         }

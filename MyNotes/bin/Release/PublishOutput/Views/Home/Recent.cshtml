@@ -1,0 +1,41 @@
+﻿@model PagedList.IPagedList<MyNotes.Entity.tbl_Notes>
+@using PagedList.Mvc
+@{
+    ViewBag.Title = "Recent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Recent Notes</h2>
+@*<hr />
+<div class="row">
+    <div class="col-xs-12">
+        @using (Html.BeginForm("Recent", "Home", FormMethod.Get))
+        {
+            <div class="col-sm-3">
+                <input type="text" id="sm-search" class="form-control" value="@ViewBag.Search" name="s" placeholder="Search">
+            </div>
+            <div class="col-sm-3">
+                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Search</button>
+            </div>
+        }
+    </div>
+
+</div>*@
+<hr />
+<div class="row">
+    <div class="col-xs-12">
+        @foreach (var item in Model)
+        {
+            <div class="list-group recent">
+                <a href="~/@item.ID" class="list-group-item">
+                    <h5 class="list-group-item-heading">@item.Name</h5>
+                    <small class="list-group-item-text">@item.CreateDate.Value.ToShortDateString()</small>
+                </a>
+            </div>
+        }
+        <div>
+            @Html.PagedListPager(Model, page => Url.Action("Recent", new { page, @s = @ViewBag.Search }))
+        </div>
+    </div>
+</div>
+

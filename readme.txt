@@ -1,0 +1,2 @@
+- Create new database with name: notes
+- Run scritps file

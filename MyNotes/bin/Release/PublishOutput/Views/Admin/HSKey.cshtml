@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "HSKey";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>HS Master 2018 Key</h2>
+<hr />
+@using (Html.BeginForm("HSKey", "Admin", FormMethod.Get))
+{
+    <div class="panel panel-primary">
+        <div class="panel-body">
+            <div class="form-group">
+                @Html.Label("ID")
+                @Html.TextBox("hid", string.Empty, new { @class = "form-control", @placeholder = "ID", @value = ViewBag.ID })
+            </div>
+            @if (ViewBag.Key != null)
+            {
+                <div class="form-group">
+                    @Html.Label("Active key")
+                    @Html.TextArea("key", new { @class = "form-control", @value = ViewBag.Key, @readonly = "readonly" })
+                </div>
+            }
+        </div>
+        <div class="panel-footer">
+            <button class="btn btn-success">Submit</button>
+        </div>
+    </div>
+}
+
