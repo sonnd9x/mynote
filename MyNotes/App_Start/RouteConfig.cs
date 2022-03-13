@@ -20,6 +20,12 @@ namespace MyNotes
           );
 
             routes.MapRoute(
+               name: "GetLink",
+               url: "getlink",
+               defaults: new { controller = "GetLink", action = "Index", id = UrlParameter.Optional }
+           );
+
+            routes.MapRoute(
                name: "Notes",
                url: "{id}",
                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },

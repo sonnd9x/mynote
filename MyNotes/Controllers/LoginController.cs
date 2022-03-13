@@ -15,7 +15,7 @@ namespace MyNotes.Controllers
         public ActionResult DangNhap()
         {
             //Comment if u dont want to create demo user
-            new CommonDao().CreateFirstUser();
+            //new CommonDao().CreateFirstUser();
             return View();
         }
 
