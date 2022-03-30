@@ -7,6 +7,7 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    @RenderSection("header", required: false)
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -22,7 +23,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="~/Recent">Recent</a></li>
-                    <li><a href="~/GetLink">Get Link</a></li>
+                    @*<li><a href="~/GetLink">Get Link</a></li>*@
                     <li><a href="~/About">About</a></li>
                 </ul>
                 @using (Html.BeginForm("Recent", "Home", FormMethod.Get, new { @class = "navbar-form navbar-left", role = "search" }))

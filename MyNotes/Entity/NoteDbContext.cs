@@ -1,9 +1,6 @@
 namespace MyNotes.Entity
 {
-    using System;
     using System.Data.Entity;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Linq;
 
     public partial class NoteDbContext : DbContext
     {
@@ -14,6 +11,7 @@ namespace MyNotes.Entity
 
         public virtual DbSet<tbl_Notes> tbl_Notes { get; set; }
         public virtual DbSet<tbl_User> tbl_User { get; set; }
+        public virtual DbSet<tbl_Emails> tbl_Emails { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

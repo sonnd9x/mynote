@@ -61,23 +61,23 @@ namespace MyNotes.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult HSKey(string hid)
-        {
-            if (!User.Identity.IsAuthenticated)
-                return RedirectToAction("DangNhap", "Login");
-            if (!string.IsNullOrEmpty(hid))
-            {
-                ViewBag.ID = hid;
-                ViewBag.Key = GenerateHSMaster(hid);
-            }
-            return View();
-        }
+        //public ActionResult HSKey(string hid)
+        //{
+        //    if (!User.Identity.IsAuthenticated)
+        //        return RedirectToAction("DangNhap", "Login");
+        //    if (!string.IsNullOrEmpty(hid))
+        //    {
+        //        ViewBag.ID = hid;
+        //        ViewBag.Key = GenerateHSMaster(hid);
+        //    }
+        //    return View();
+        //}
 
-        private string GenerateHSMaster(string productID)
-        {
-            var key = OmegaLib.Encryption.StringCipher.Encrypt(productID , "keyhsmaster.blogspot.com");
-            return key;
-        }
+        //private string GenerateHSMaster(string productID)
+        //{
+        //    var key = OmegaLib.Encryption.StringCipher.Encrypt(productID , "keyhsmaster.blogspot.com");
+        //    return key;
+        //}
 
         public ActionResult Hanbot(string key)
         {

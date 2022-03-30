@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using MyNotes.Entity;
 using PagedList;
@@ -107,16 +108,45 @@ namespace MyNotes.Dao
             try
             {
                 var res = GetNote(id);
-                if(res != null)
+                if (res != null)
                 {
                     db.tbl_Notes.Remove(res);
                     db.SaveChanges();
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
             }
+        }
+
+        public async Task InsertEmail(tbl_Emails model)
+        {
+            try
+            {
+                model.ID = Guid.NewGuid();
+                db.tbl_Emails.Add(model);
+                await db.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                return;
+            }
+        }
+
+
+        public IEnumerable<tbl_Emails> ListEmailAllPaging(string search, int page, int pageSize)
+        {
+            IQueryable<tbl_Emails> res = db.tbl_Emails;
+
+            if (!string.IsNullOrEmpty(search))
+            {
+                res = res.Where(x => x.Subject.Contains(search)
+                                     || x.Text.Contains(search)
+                                     || x.From.Contains(search)
+                                     || x.To.Contains(search));
+            }
+            return res.OrderByDescending(x => x.Date).ToPagedList(page, pageSize);
         }
     }
 }

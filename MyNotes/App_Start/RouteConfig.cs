@@ -60,6 +60,18 @@ namespace MyNotes
                 url: "admin/{action}/{id}",
                 defaults: new { controller = "Admin", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "Email",
+                url: "email",
+                defaults: new { controller = "Email", action = "Index" }
+            );
+            routes.MapRoute(
+                name: "New Email",
+                url: "email/receive",
+                defaults: new { controller = "Email", action = "Receive" }
+            );
+
             routes.MapRoute(
                 name: "OnlyAction",
                 url: "{action}",

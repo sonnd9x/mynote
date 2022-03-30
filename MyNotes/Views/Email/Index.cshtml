@@ -1,0 +1,63 @@
+﻿@model PagedList.IPagedList<MyNotes.Entity.tbl_Emails>
+@using PagedList.Mvc
+
+@{
+    ViewBag.Title = "Danh sách Email";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Danh sách Email</h2>
+<hr />
+<div class="row">
+    <div class="col-xs-12">
+        @foreach (var item in Model)
+        {
+            <div class="list-group">
+                <a href="#" data-toggle="modal" data-target="#myModal2" data-subject="@item.Subject" data-html="@item.Html" data-from="@item.From" data-date="@item.Date" class="list-group-item">
+                    <span class="badge">@item.From</span>
+                    <h5 class="list-group-item-heading"><b>@item.Subject</b></h5>
+                    <p class="list-group-item-text">@(item.Text.Substring(0, Math.Min(50, item.Text.Length)))...</p>
+                </a>
+            </div>
+        }
+        <div>
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page, @s = @ViewBag.Search }))
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+            <div class="modal-body">
+                <p style="color: red;font-weight: bold;">From: <span id="sendFrom"></span> - at <span id="sendDate"></span></p>
+                <hr />
+                <p id="txtInfo"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script>
+
+        $('#myModal2').on('show.bs.modal', function (e) {
+
+            //get data-id attribute of the clicked element
+            var subject = $(e.relatedTarget).data('subject');
+            var html = $(e.relatedTarget).data('html');
+            var from = $(e.relatedTarget).data('from');
+            var date = $(e.relatedTarget).data('date');
+
+            //populate the textbox
+            $(e.currentTarget).find('h4[id="myModalLabel"]').html(subject);
+            $(e.currentTarget).find('p[id="txtInfo"]').html(html);
+            $(e.currentTarget).find('span[id="sendFrom"]').text(from);
+            $(e.currentTarget).find('span[id="sendDate"]').text(date);
+        });
+    </script>
+}
